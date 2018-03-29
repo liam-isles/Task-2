@@ -1,0 +1,98 @@
+/*Unfortunately I have to admit that the task was too much to be completed within a week timeframe,
+I have used this space to put my ideas and concepts down to explain what I was trying to achieve.
+This opening class, as an example, was supposed to have user input capability to determine day of the week.*/
+
+public class qaCinema {
+ 
+  public static void main(String[] args) {
+  System.out.println("Welcome to QA Cinemas! Are you visiting on a Wednesday, Y or N?");
+  }
+}
+/*this is to decide whether the discount is applied, I used boolean because its ultimately a true or false outcome
+I wanted to create a system that, after inputting the day, would then either go down the discounted route or the standard pricing
+So was going to use an ifElse split to determine the discount but could not get it to functionally progress after the decision
+Also need to implement some form of user input in this section ideally.*/
+public class Wednesday {
+  
+  public static void main(String[] args) {
+    int Y = 1;
+    
+    if (Y <= 1) {
+      System.out.print("The ticket prices are as follows: Standard 6, OAP 4, Student 4 and Child 2.");
+    }else{
+      System.out.print("The ticket prices are as follows: Standard 8, OAP 6, Student 6 and Child 4.");
+    }
+  }
+}
+/*here I was trying to create a system that would explain ticket pricing but I am missing some methods and formatting.
+I wanted to incorporate a switch as it seemed like a logical way of splitting the prices and also was interesting to use.
+Also examples of encapsulation and inheritance.*/
+
+public class Standard {
+  
+  public static void main(String[] args) {
+    
+    int Ticketprice = 8;
+    
+    swtich (Ticketprice){
+      
+      case 6: System.out.println("This ticket costs 6");
+      		break;
+      case 8: System.out.println("this ticket costs 8");
+      		break;
+      default:System.out.print.ln("tickets are usually 8 but 6 on a Wednesday.")
+    }
+ }
+}
+public class Oap {
+  
+    public static void main(String[] args) {
+    
+    int Ticketprice = 6;
+    
+    swtich (Ticketprice){
+      
+      case 4: System.out.println("This ticket costs 4");
+      		break;
+      case 6: System.out.println("this ticket costs 6");
+      		break;
+      default:System.out.print.ln("tickets are usually 6 but 4 on a Wednesday.")
+    }
+ }
+}
+public class Student {
+  
+    public static void main(String[] args) {
+    
+    int Ticketprice = 6;
+    
+    swtich (Ticketprice){
+      
+      case 4: System.out.println("This ticket costs 4");
+      		break;
+      case 6: System.out.println("this ticket costs 6");
+      		break;
+      default:System.out.print.ln("tickets are usually 6 but 4 on a Wednesday.")
+    }
+ }
+}
+public class Child {
+  
+    public static void main(String[] args) {
+    
+    int Ticketprice = 4;
+    
+    swtich (Ticketprice){
+      
+      case 2: System.out.println("This ticket costs 2");
+      		break;
+      case 4: System.out.println("this ticket costs 4");
+      		break;
+      default:System.out.print.ln("tickets are usually 4 but 2 on a Wednesday.")
+    }
+ }
+}
+/*at this point I was aiming to implement a user input section that allowed a selection of ticket(s) that would produce a total.
+I need to implement a system here that can determine if the prices are correct for the day of the week and then print the result,
+allowing the customer to see the price. I wanted to finish the project with another small section of user input that would print
+a phrase along the lines of "thank you for your purchase, enjoy!".*/
